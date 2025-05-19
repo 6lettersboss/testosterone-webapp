@@ -1,3 +1,4 @@
+// pages/index.tsx
 import React, { useState } from 'react';
 import { estimateTestosterone } from '../utils/algorithm';
 
@@ -11,7 +12,7 @@ export default function Home() {
       alert('이메일과 개인정보 활용에 모두 동의해야 측정이 가능합니다.');
       return;
     }
-    const mockInput = { hrv: 52, age: 30 }; // 추후 실제 데이터로 대체
+    const mockInput = { hrv: 52, age: 30 };
     const value = estimateTestosterone(mockInput);
     setResult(value);
   };
